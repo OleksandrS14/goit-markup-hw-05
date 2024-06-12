@@ -644,9 +644,16 @@ ul, ol {
     color: #8e8f99;
 }
 
+.modal-field-wrap {
+    position: relative;
+}
+
 .modal-icon {
     padding: 3px 0px;
     stroke: #404BBF;
-    fill: #31d0aa;
-
+    fill: #111111;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
 }
