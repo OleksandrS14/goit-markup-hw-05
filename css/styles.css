@@ -678,3 +678,27 @@ ul, ol {
     outline: transparent;
     resize: none;
 }
+
+.modal-btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-check-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color:  rgba(46, 47, 66, 0.4);
+    display: flex;
+    align-items: center;
+}
+
+.modal-check-text span {
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    margin-right: 8px;
+}
