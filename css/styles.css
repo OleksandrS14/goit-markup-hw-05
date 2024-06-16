@@ -500,7 +500,7 @@ ul, ol {
 .footer-container-social {
     max-width: 208px;
     margin-left: 120px;
-    margin-right: 120px;
+    margin-right: 80px;
     display: flex;
     flex-direction: column;
     align-items: baseline
@@ -548,6 +548,57 @@ ul, ol {
     fill: #f4f4fd;
 }
 
+
+.footer-email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+.footer-form {
+    display: flex;
+}
+
+.footer-form-wrap {
+
+}
+
+.footer-input {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    padding: 0 16px;
+    background-color: transparent;
+}
+
+.footer-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.footer-form-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    padding: 8px 24px;
+    background-color: #4d5ae5;
+    border-radius: 4px;
+    margin-left: 24px;
+    border: none;
+}
+
+
 /*----------------------*/
 
 .backdrop {
@@ -561,6 +612,9 @@ ul, ol {
     visibility: hidden;
     position: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .is-open {
@@ -659,7 +713,6 @@ ul, ol {
 
 .modal-icon {
     padding: 3px 0px;
-    
     fill: #2E2F42;
     left: 16px;
     top: 50%;
@@ -697,8 +750,19 @@ ul, ol {
 .modal-check-text span {
     width: 16px;
     height: 16px;
-    display: block;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
 }
+
+.modal-check:checked + .modal-check-text span {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+
+/*  */
