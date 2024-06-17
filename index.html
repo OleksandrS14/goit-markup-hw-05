@@ -367,15 +367,17 @@
                         placeholder="E-mail" 
                         />
                     </div>
-                        <button type="submit" class="footer-form-btn">Subscribe</button>
-                        <svg class="frame-footer" height="24" width="24">
-                            <use href="./images/icons.svg#icon-Frame-3"></use>
-                        </svg>
+                        <div class="footer-form-icon">
+                            <button type="submit" class="footer-form-btn">Subscribe</button>
+                            <svg class="frame-footer" height="24" width="24">
+                                <use href="./images/icons.svg#icon-Frame-3"></use>
+                            </svg>
+                        </div>
                 </form>
             </div>
         </div>
         </footer>
-        <div class="backdrop">
+        <div class="backdrop is-open">
             <div class="modal">
                 <button type="button" class="modal-close-btn">
                     <svg class="modal-close-icon" width="8" height="8">
@@ -431,13 +433,13 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="modal-field">
+                    <div class="modal-field-comment">
                         <label for="user-comment" class="modal-label">Comment</label>
                         <textarea 
                         name="user-comment" 
                         id="user-comment" 
                         class="modal-text" 
-                        placeholder="Text input">
+                        placeholder="Text input" id="user-comment">
                     </textarea>
                     </div>
                     <div class="modal-field">
