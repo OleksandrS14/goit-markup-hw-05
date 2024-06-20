@@ -493,16 +493,14 @@ ul, ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin-top: 16px;
+   
     width: 264px;
 }
 
 .footer-container-social {
-    max-width: 208px;
+   
     margin-left: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline
+ 
 }
 
 .footer-text-social {
@@ -516,10 +514,8 @@ ul, ol {
 
 .footer-social-list {
     display: flex;
-    flex-direction: row;
     gap: 16px;
-    padding-top: 16px;
-    align-items: baseline
+
 }
 
 .footer-social-item {
@@ -557,8 +553,8 @@ ul, ol {
 
 .form-container-footer {
     margin-left: 80px;
-    box-sizing: border-box;
-    display: block;
+  
+   
 
 }
 
@@ -573,6 +569,7 @@ ul, ol {
 
 .footer-form {
     display: flex;
+    gap: 24px;
 }
 
 .footer-form-wrap {
@@ -585,8 +582,14 @@ ul, ol {
     width: 264px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    padding: 0 16px;
+    padding-left: 16px;
     background-color: transparent;
+    outline: transparent;
+    font-weight: 400;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
+color: #fff;
 }
 
 .footer-input::placeholder {
@@ -607,7 +610,6 @@ ul, ol {
     padding: 8px 24px;
     background-color: #4d5ae5;
     border-radius: 4px;
-    margin-left: 24px;
     border: none;
     min-width: 165px;
     display: flex;
@@ -622,12 +624,9 @@ ul, ol {
 }
 
 .frame-footer {
-    box-sizing: border-box;
+   
     fill: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    margin-left: 16px;
 }
 
 
@@ -719,7 +718,7 @@ ul, ol {
 }
 
 .modal-field {
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 
 .modal-input {
@@ -818,12 +817,10 @@ ul, ol {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color:  rgba(46, 47, 66, 0.4);
-    display: flex;
-    align-items: center;
     color: #8e8f99;
 }
 
-.modal-check-text span {
+.modal-check-l {
     width: 16px;
     height: 16px;
     border-radius: 2px;
@@ -838,15 +835,14 @@ ul, ol {
     display: inline-flex;
 }
 
-.modal-check-l {
 
-}
 
 .modal-privacy-policy {
     color: #4d5ae5;
+    display: inline-flex;
 }
 
-.modal-check:checked + .modal-check-text span {
+.modal-check:checked + .modal-check-text > .modal-check-l {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
@@ -861,6 +857,13 @@ ul, ol {
     height: 120px;
 }
 
+.modal-chec-link {
+    text-decoration: underline;
+    color: #4d5ae5;
+}
+.modal-field-check{
+    margin-bottom: 24px;
+}
 .modal-label {
 }
 
